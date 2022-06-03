@@ -54,13 +54,14 @@ p {
 
 #left_banner {
   text-align: left;
-  margin-left: 20vw;
+  margin-left: 10vw;
 }
 #right_banner {
   text-align: right;
-  margin-right: 20vw;
+  margin-right: 10vw;
   margin-top: 35px;
-}
+    
+    
 .button-blue {
   background-color: #00ACB0;
   color: white;
