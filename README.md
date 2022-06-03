@@ -1,3 +1,3 @@
 # CV page
 
-url:https://angelocolella.github.io/
+url: https://angelocolella.github.io/
