@@ -73,7 +73,7 @@ p {
     padding: 10px;
     flex-grow: 1;
     font-size: 15px;
-    
+    border: 1.5px solid #404042;
     width: 100px;
     height: 70px;
 }
