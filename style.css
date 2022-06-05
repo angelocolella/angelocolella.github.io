@@ -68,12 +68,12 @@ p {
     right: 0;
     background: #FFFFFF;
     box-shadow: 0 0 16px rgba(0,0,0,0.1);
-    
     text-align: center;
     padding: 10px;
     flex-grow: 1;
     font-size: 15px;
-    border: 1.5px solid #404042;
+    border: 1.5px solid #323c4a;
+    border-bottom-right-radius: 1px;
     width: 100px;
     height: 70px;
 }
@@ -138,16 +138,12 @@ p {
     text-align: center;
     padding: 24px 0;
 }
+
 .footer p {
-  color: white;
+    color: white;
 }
 
-.footerindex {
-    background: #404042;
-    text-align: center;
-    padding: 24px 0;
-    bottom:0;
-}
+
 
 .long-card {
   background: white;
@@ -225,5 +221,65 @@ p {
 }
 
 
+.skills {
+    width: 100%;
+    max-width: 1200px;
+    padding: 0 20px;
+}
 
+.skill-name {
+    font:bold 12px arial;
+    font-size: 18px;
+    font-weight: 700;
+    color: #484547;
+    text-transform: uppercase;
+    margin: 20px 0;
+}
 
+.skill-bar {
+    height: 14px;
+    background: #282828;
+    border-radius: 3px;
+}
+
+.skill-per {
+    height: 14px;
+    background: #d13639;
+    border-radius: 3px;
+    position: relative;
+    animation: fillBars 3s 1;
+}
+
+    .skill-per::before {
+        content: attr(per);
+        position: absolute;
+        padding: 4px 6px;
+        background: #f1f1f1;
+        border-radius: 4px;
+        font-size: 12px;
+        top: -35px;
+        right: 0;
+        transform: translateX(50%);
+    }
+
+    .skill-per::after {
+        content: "";
+        position: absolute;
+        width: 10px;
+        height: 10px;
+        background: #f1f1f1;
+        top: -20px;
+        right: 0;
+        transform: translateX(50%) rotate(45deg);
+        border-radius: 2px;
+    }
+
+@keyframes fillBars {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 100%;
+    }
+}
