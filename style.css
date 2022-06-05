@@ -66,14 +66,14 @@ p {
     position: relative;
     top: -24px;
     right: 0;
-    background: #E0E0E0;
+    background: #FFFFFF;
     box-shadow: 0 0 16px rgba(0,0,0,0.1);
     
     text-align: center;
     padding: 10px;
     flex-grow: 1;
     font-size: 15px;
-    border: 1.5px solid #404042;
+    
     width: 100px;
     height: 70px;
 }
